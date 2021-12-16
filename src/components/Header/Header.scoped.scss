@@ -1,0 +1,13 @@
+@import "../../assets/scss/varibles";
+
+.header {
+  padding: 20px;
+  background-color: $white-transparent;
+  color: #f1f1f1;
+  text-align: center;
+
+  h1 {
+    font-size: 30px;
+    margin: 0px;
+  }
+}
