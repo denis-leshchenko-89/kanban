@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import './AddColumn.scoped.scss';
 import { useDispatch } from 'react-redux';
-import { addColumn } from '../../../store/reducers/boardSlice';
+import { addColumn } from '../../../store/slices/boardSlice';
 import { v4 as uuid } from 'uuid';
 
 function AddColumn() {
@@ -38,7 +38,7 @@ function AddColumn() {
           })}
           onClick={handleToggle}
         >
-          <i className='far fa-plus' />Добавьте еще одну колонку
+          <i className='far fa-plus' />Добавьте колонку
         </div>
         <div
           className={classNames({
@@ -51,7 +51,7 @@ function AddColumn() {
           </div>
           <div className='nav'>
             <button type='button' onClick={handleAddColumn}>
-              Добавить список
+              Добавить карточку
             </button>
             <i className='fal fa-times' onClick={handleToggle} />
           </div>

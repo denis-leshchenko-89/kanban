@@ -1,7 +1,9 @@
 
 .board {
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 15px;
+  height: 100%;
 }

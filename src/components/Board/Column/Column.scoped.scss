@@ -20,12 +20,17 @@
   flex-basis: 272px;
   background-color: $grey;
   border-radius: 3px;
-  height: 100%;
+  cursor: grab;
 
   .column-header {
     margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     .input {
+      width: 100%;
+
       input[type='text'] {
         cursor: pointer;
         background-color: transparent;
@@ -45,10 +50,18 @@
         }
       }
     }
+
+    .nav {
+      i {
+        display: block;
+        margin: 0px 10px;
+        color: #ff0000;
+        cursor: pointer;
+      }
+    }
   }
 
   .column-list {
-    margin: 10px;
     display: grid;
     row-gap: 10px;
   }
@@ -57,4 +70,5 @@
     cursor: pointer;
     margin: 10px;
   }
+
 }

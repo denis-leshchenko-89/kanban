@@ -3,7 +3,7 @@ import './AddCard.scoped.scss';
 import classNames from 'classnames';
 import { v4 as uuid } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { addCard } from '../../../store/reducers/boardSlice';
+import { addCard } from '../../../store/slices/boardSlice';
 
 function AddCard({ columnIndex }) {
   const dispatch = useDispatch();
@@ -16,7 +16,7 @@ function AddCard({ columnIndex }) {
     setCardText('');
   };
 
-  const handleAddTitleCard = (event) => {
+  const handleEditTitleCard = (event) => {
     const value = event.target.value;
     setCardText(value);
   };
@@ -46,12 +46,13 @@ function AddCard({ columnIndex }) {
             show: isEdit,
           })}
         >
-          <div className='input'>
-            <input type='text' value={cardText} onChange={handleAddTitleCard} />
+          <div className='textarea'>
+            <textarea type='text' value={cardText} placeholder='Ввести заголовок для этой карточки'
+                      onChange={handleEditTitleCard} />
           </div>
           <div className='nav'>
             <button type='button' onClick={handleAddCard}>
-              Добавить список
+              Добавить карточку
             </button>
             <i className='fal fa-times' onClick={handleToggle} />
           </div>

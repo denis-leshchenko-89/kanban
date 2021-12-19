@@ -3,46 +3,30 @@ import './Column.scoped.scss';
 import { v4 as uuid } from 'uuid';
 import Card from '../Card';
 import AddCard from '../AddCard/AddCard';
-import { editTitleColumn } from '../../../store/reducers/boardSlice';
+import { deleteColumn, editTitleColumn } from '../../../store/slices/boardSlice';
 import { useDispatch } from 'react-redux';
 
 function Column({ column, columnIndex }) {
   const dispatch = useDispatch();
   const [value, setValue] = useState('');
 
+
   useEffect(() => {
     setValue(column.title);
   }, [column.title]);
 
   const handleChangeEditTitle = (event, columnIndex) => {
-    const editTitle = { title: value, columnIndex: columnIndex };
-    dispatch(editTitleColumn(editTitle));
+    dispatch(editTitleColumn({ title: value, columnIndex: columnIndex }));
   };
 
-  const onDragOver = (event) => {
-    event.preventDefault();
-    // event.currentTarget.style.backgroundColor = '#000';
-  };
 
-  const onDrop = (event) => {
-    event.currentTarget.classList.remove('dragging');
-    const id = event.dataTransfer.getData('text');
-    const draggableElement = document.getElementById(id);
-    const dropzone = event.currentTarget.querySelector('.column-list');
-    dropzone.insertAdjacentElement('beforeend', draggableElement);
-    event.dataTransfer.clearData();
+  const handleDelete = (columnIndex) => {
+    dispatch(deleteColumn(columnIndex));
   };
 
 
   return (
-    <div id={column.id} className='column'
-         onDragOver={(event) => {
-           onDragOver(event);
-         }}
-         onDrop={(event) => {
-           onDrop(event);
-         }}
-    >
+    <div id={column.id} className='column'>
       <div className='column-header'>
         <div className='input'>
           <input
@@ -56,12 +40,19 @@ function Column({ column, columnIndex }) {
             }}
           />
         </div>
+        <div className='nav'>
+          <i className='far fa-trash-alt' onClick={() => {
+            handleDelete(columnIndex);
+          }} />
+        </div>
       </div>
+
       <div className='column-list'>
-        {column.cards &&
+        {column.cards.length > 0 &&
           column.cards.map((card, cardIndex) => {
             return <Card key={uuid()} card={card} columnIndex={columnIndex} cardIndex={cardIndex} />;
-          })}
+          })
+        }
       </div>
       <div className='column-footer'>
         <AddCard columnIndex={columnIndex} />

@@ -35,10 +35,18 @@ export const boardSlice = createSlice({
     editTextCard: (state, action) => {
       state.columns[action.payload.columnIndex].cards[action.payload.cardIndex].text = action.payload.text;
     },
+    deleteCard: (state, action) => {
+      state.columns[action.payload.columnIndex].cards.splice(action.payload.cardIndex, 1);
+    },
+    deleteColumn: (state, action) => {
+      state.columns.splice(action.payload.columnIndex, 1);
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { addColumn, addCard, editTitleColumn, editTextCard } = boardSlice.actions;
+export const {
+  addColumn, addCard, editTitleColumn, editTextCard, deleteCard, deleteColumn,
+} = boardSlice.actions;
 
 export default boardSlice.reducer;
