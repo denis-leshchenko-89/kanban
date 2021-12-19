@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/kanban/static/css/main.1ef96a3e.chunk.css",
+    "main.js": "/kanban/static/js/main.f8cd3571.chunk.js",
+    "main.js.map": "/kanban/static/js/main.f8cd3571.chunk.js.map",
+    "runtime-main.js": "/kanban/static/js/runtime-main.f6bb6e3e.js",
+    "runtime-main.js.map": "/kanban/static/js/runtime-main.f6bb6e3e.js.map",
+    "static/css/2.15330dd9.chunk.css": "/kanban/static/css/2.15330dd9.chunk.css",
+    "static/js/2.825041de.chunk.js": "/kanban/static/js/2.825041de.chunk.js",
+    "static/js/2.825041de.chunk.js.map": "/kanban/static/js/2.825041de.chunk.js.map",
+    "index.html": "/kanban/index.html",
+    "static/css/2.15330dd9.chunk.css.map": "/kanban/static/css/2.15330dd9.chunk.css.map",
+    "static/css/main.1ef96a3e.chunk.css.map": "/kanban/static/css/main.1ef96a3e.chunk.css.map",
+    "static/js/2.825041de.chunk.js.LICENSE.txt": "/kanban/static/js/2.825041de.chunk.js.LICENSE.txt",
+    "static/media/DefaultLayout.scss": "/kanban/static/media/bg-board.198e837c.jpg",
+    "static/media/global.scss": "/kanban/static/media/fa-solid-900.eb853357.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6bb6e3e.js",
+    "static/css/2.15330dd9.chunk.css",
+    "static/js/2.825041de.chunk.js",
+    "static/css/main.1ef96a3e.chunk.css",
+    "static/js/main.f8cd3571.chunk.js"
+  ]
+}
