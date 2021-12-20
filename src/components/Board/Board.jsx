@@ -25,7 +25,6 @@ function Board() {
         <AddColumn />
       </div>
     </BorderContext.Provider>
-
   );
 }
 

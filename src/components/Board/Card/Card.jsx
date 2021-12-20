@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import './Card.scoped.scss';
 import { deleteCard, editTextCard } from '../../../store/slices/boardSlice';
 import { useDispatch } from 'react-redux';
@@ -7,10 +7,15 @@ import { BorderContext } from '../Board';
 
 
 function Card({ card, columnIndex, cardIndex }) {
+  const [dragging, setDragging] = useState(false);
+  const currentRef = useRef(null);
   const [value, setValue] = useState('');
   const [isEdit, setIsEdit] = useState(false);
   const dispatch = useDispatch();
   const borderRef = useContext(BorderContext);
+
+  let shiftLeft = null;
+  let shiftTop = null;
 
 
   useEffect(() => {
@@ -34,51 +39,55 @@ function Card({ card, columnIndex, cardIndex }) {
   };
 
 
-  // -----------------------------
-  // useEffect(() => {
-  //   window.addEventListener("scroll", scrollHandler, true);
-  //   return () => {
-  //     window.removeEventListener("scroll", scrollHandler, true);
-  //   };
-  // }, []);
-
-
-  const [dragging, setDragging] = useState(false);
-  const currentRef = useRef(null);
-  const [originalCoord, setOriginalCoord] = useState({ shiftX: 0, shiftY: 0 });
-
   const handleParentMouseMove = ((event) => {
-    currentRef.current.style.left = event.pageX + 'px';
-    currentRef.current.style.top = event.pageY + 'px';
+
+    currentRef.current.style.top = event.pageY - shiftTop + 'px';
+    currentRef.current.style.left = event.pageX - shiftLeft + 'px';
+
+    // currentRef.current.style.left = event.pageX - currentRef.current.offsetWidth / 2 + 'px';
+    // currentRef.current.style.top = event.pageY - currentRef.current.offsetHeight / 2 + 'px';
+
+
   });
 
-  // const scrollHandler = (event) => {
-  //   console.log(currentRef.current.getBoundingClientRect());
-  //
-  //   return {
-  //     top: currentRef.current.getBoundingClientRect().top + event.window.pageYOffset,
-  //     left: currentRef.current.getBoundingClientRect().left + pageXOffset,
-  //   };
-  //
-  // };
 
-  function getCoords(elem) { // кроме IE8-
-    var box = elem.getBoundingClientRect();
+  const getCoords = (element) => {
+    let box = element.getBoundingClientRect();
+
+    let body = document.body;
+    let documentElement = document.documentElement;
+
+    let scrollTop = window.pageYOffset || documentElement.scrollTop || body.scrollTop;
+    let scrollLeft = window.pageXOffset || documentElement.scrollLeft || body.scrollLeft;
+
+    let clientTop = documentElement.clientTop || body.clientTop || 0;
+    let clientLeft = documentElement.clientLeft || body.clientLeft || 0;
+
+    let top = box.top + scrollTop - clientTop;
+    let left = box.left + scrollLeft - clientLeft;
+
     return {
-      // top: box.top + pageYOffset,
-      // left: box.left + pageXOffset
+      top: Math.round(top),
+      left: Math.round(left),
     };
-  }
+  };
 
-  
+
   const handleMouseDown = (event) => {
     setDragging(true);
-    event.currentTarget.style.position = 'absolute';
+    console.log('handleMouseDown');
+    let coords = getCoords(currentRef.current);
+    shiftLeft = event.pageX - coords.left;
+    shiftTop = event.pageY - coords.top;
 
-    setOriginalCoord({
-      shiftX: event.pageX,
-      shiftY: event.pageY,
-    });
+    currentRef.current.style.width = currentRef.current.getBoundingClientRect().width + 'px';
+    currentRef.current.style.height = currentRef.current.getBoundingClientRect().height + 'px';
+
+    currentRef.current.style.zIndex = 1000;
+    currentRef.current.style.position = 'absolute';
+    document.querySelector('.board').appendChild(currentRef.current);
+
+    handleParentMouseMove(event);
 
     borderRef.current.addEventListener('mousemove', handleParentMouseMove);
   };
@@ -86,10 +95,10 @@ function Card({ card, columnIndex, cardIndex }) {
 
   const handleMouseUp = (event) => {
     setDragging(false);
-    // setOriginalCoord({ x: xPos, y: yPos });
-    // setDelta({ x: 0, y: 0 });
+    console.log('handleMouseUp');
     borderRef.current.removeEventListener('mousemove', handleParentMouseMove);
   };
+
 
   return (
     <div

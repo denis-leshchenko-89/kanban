@@ -24,9 +24,16 @@ function Column({ column, columnIndex }) {
     dispatch(deleteColumn(columnIndex));
   };
 
+  const handleMouseOver = (event) => {
+
+    // console.log(event.target);
+    // console.log(event.currentTarget);
+
+  };
 
   return (
-    <div id={column.id} className='column'>
+    <div id={column.id} className='column' onMouseOver={handleMouseOver}
+    >
       <div className='column-header'>
         <div className='input'>
           <input
@@ -50,7 +57,8 @@ function Column({ column, columnIndex }) {
       <div className='column-list'>
         {column.cards.length > 0 &&
           column.cards.map((card, cardIndex) => {
-            return <Card key={uuid()} card={card} columnIndex={columnIndex} cardIndex={cardIndex} />;
+            return <Card key={uuid()} card={card} columnIndex={columnIndex} cardIndex={cardIndex}
+            />;
           })
         }
       </div>

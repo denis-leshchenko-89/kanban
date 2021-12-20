@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d536ae9c-482b-4dc6-be30-0c1e08a8a79c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Card/222.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Card/44444.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/AddCard/AddCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/AddCard/AddCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/AddCard/AddCard.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/AddCard/AddCard.scoped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/AddColumn/AddColumn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/AddColumn/AddColumn.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/AddColumn/AddColumn.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/AddColumn/AddColumn.scoped.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.scoped.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Card/Card.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/Card.scoped.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Column/Column.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Column/Column.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/Column/Column.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Column/Column.scoped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/boardSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/boardSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +128,7 @@
       <workItem from="1639733629995" duration="3035000" />
       <workItem from="1639754313268" duration="6397000" />
       <workItem from="1639783633222" duration="11226000" />
+      <workItem from="1639959354226" duration="13380000" />
     </task>
     <servers />
   </component>
