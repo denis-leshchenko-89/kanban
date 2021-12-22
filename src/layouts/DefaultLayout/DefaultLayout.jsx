@@ -1,9 +1,12 @@
+import { Outlet } from 'react-router-dom';
 import './DefaultLayout.scss';
+import Header from '../../components/Header';
 
-function DefaultLayout({ children }) {
+function DefaultLayout() {
   return (
     <div className='board-layout'>
-      <main className='main'>{children}</main>
+      <Header />
+      <main className='main'><Outlet /></main>
     </div>
   );
 }

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import './LoginPage.scoped.scss';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { setUser } from '../../store/slices/userSlice';
+import './RegistrationnPage.scoped.scss';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import { useDispatch } from 'react-redux';
+import { setUser } from '../../store/slices/userSlice';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
-function LoginPage() {
+function RegistrationnPage() {
   const dispatch = useDispatch();
   const history = useNavigate();
   const { isAuthenticated } = useAuth();
@@ -16,8 +16,8 @@ function LoginPage() {
     event.preventDefault();
     const auth = getAuth();
     const { email, password } = event.target.elements;
-
-    signInWithEmailAndPassword(auth, email.value, password.value)
+    console.log(email, password);
+    createUserWithEmailAndPassword(auth, email.value, password.value)
       .then(({ user }) => {
         dispatch(setUser({
           email: user.email,
@@ -33,21 +33,22 @@ function LoginPage() {
 
   return (
     isAuthenticated ? <Navigate to='/' /> :
-      <div className='login-page'>
+      <div className='registration-page'>
         <div className='form'>
           <div className='nav'>
-            <Link to='/login' className='active'>Логин</Link>
-            <Link to='/registration'>Регистрация</Link>
+            <Link to='/login'>Логин</Link>
+            <Link to='/registration' className='active'>Регистрация</Link>
           </div>
           <form onSubmit={handleSubmit}>
             <input type='email' name='email' placeholder='Имя' />
             <input type='password' name='password' placeholder='Пароль' />
-            <button type='submit'>Вход</button>
+            <button type='submit'>Зарегистрироваться</button>
           </form>
           <div className='error-message'>{error}</div>
         </div>
       </div>
   );
+
 }
 
-export default LoginPage;
+export default RegistrationnPage;

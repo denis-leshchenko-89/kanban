@@ -2,12 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d536ae9c-482b-4dc6-be30-0c1e08a8a79c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HOC/RequireAuth/RequireAuth.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HOC/RequireAuth/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/LoginPage/LoginPage.scoped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/RegistrationnPage/RegistrationnPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/RegistrationnPage/RegistrationnPage.scoped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/RegistrationnPage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/slices/userSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/Card/Card.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/Card.scoped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/Column/Column.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Column/Column.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scoped.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AuthLayout/AuthLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/AuthLayout/AuthLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AuthLayout/AuthLayout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/AuthLayout/AuthLayout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/DefaultLayout/DefaultLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/DefaultLayout/DefaultLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +65,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="21oMONpFuydp2Hq6OHIhdKX20tE" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -60,7 +82,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Board/Card" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/page" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -76,17 +98,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GroupBWT\kanban\src\page" />
+      <recent name="D:\GroupBWT\kanban\src\page\LoginPage" />
+      <recent name="D:\GroupBWT\kanban\src\components\AuthRoute" />
       <recent name="D:\GroupBWT\kanban\src\components\Board\Card" />
       <recent name="D:\GroupBWT\kanban\src\store\slices" />
-      <recent name="D:\GroupBWT\kanban\src\components\Board" />
-      <recent name="D:\GroupBWT\kanban\src\components\Common" />
-      <recent name="D:\GroupBWT\kanban\src\components\Common\Input" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GroupBWT\kanban\src" />
+      <recent name="D:\GroupBWT\kanban\src\HOC" />
       <recent name="D:\GroupBWT\kanban\src\components\Board" />
       <recent name="D:\GroupBWT\kanban\src\components\Board\Column" />
       <recent name="D:\GroupBWT\kanban\src\components" />
-      <recent name="D:\GroupBWT\kanban\src\components\Board\Board" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -128,7 +151,11 @@
       <workItem from="1639733629995" duration="3035000" />
       <workItem from="1639754313268" duration="6397000" />
       <workItem from="1639783633222" duration="11226000" />
-      <workItem from="1639959354226" duration="13380000" />
+      <workItem from="1639959354226" duration="13759000" />
+      <workItem from="1640030727587" duration="594000" />
+      <workItem from="1640174259932" duration="39000" />
+      <workItem from="1640174307215" duration="15142000" />
+      <workItem from="1640195799652" duration="13816000" />
     </task>
     <servers />
   </component>

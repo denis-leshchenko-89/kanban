@@ -97,6 +97,8 @@ function Card({ card, columnIndex, cardIndex }) {
     setDragging(false);
     console.log('handleMouseUp');
     borderRef.current.removeEventListener('mousemove', handleParentMouseMove);
+
+
   };
 
 

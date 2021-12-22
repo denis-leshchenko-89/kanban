@@ -1,9 +1,10 @@
+import { Outlet } from 'react-router-dom';
 import './AuthLayout.scss';
 
-const AuthLayout = ({ children }) => {
+const AuthLayout = () => {
   return (
     <div className='auth-layout'>
-      <main className='main'>{children}</main>
+      <main className='main'><Outlet /></main>
     </div>
   );
 };
