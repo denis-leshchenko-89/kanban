@@ -23,7 +23,7 @@ function AddCard({ columnIndex }) {
 
   const handleAddCard = () => {
     if (cardText !== '') {
-      const card = { id: `card-${uuid()}`, text: cardText };
+      const card = { id: uuid(), text: cardText };
       dispatch(addCard({ card, columnIndex: columnIndex }));
       setIsEdit(!isEdit);
     }

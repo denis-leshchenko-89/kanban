@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d536ae9c-482b-4dc6-be30-0c1e08a8a79c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/helper/getCoords.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HOC/RequireAuth/RequireAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HOC/RequireAuth/RequireAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/AddCard/AddCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/AddCard/AddCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/AddColumn/AddColumn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/AddColumn/AddColumn.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Column/Column.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Column/Column.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/boardSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/boardSlice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

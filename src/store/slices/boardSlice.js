@@ -4,15 +4,15 @@ import { v4 as uuid } from 'uuid';
 const initialState = {
   columns: [
     {
-      id: `column-${uuid()}`, title: 'План на месяц', cards: [
-        { id: `card-${uuid()}`, text: 'Пройти курс по React' },
-        { id: `card-${uuid()}`, text: 'Отметить день рождения' },
+      id: uuid(), title: 'План на месяц', cards: [
+        { id: uuid(), text: 'Пройти курс по React' },
+        { id: uuid(), text: 'Отметить день рождения' },
       ],
     },
     {
-      id: `column-${uuid()}`, title: 'План на день', cards: [
-        { id: `card-${uuid()}`, text: 'Записаться на курс по React' },
-        { id: `card-${uuid()}`, text: 'Забронировать тир на субботу' },
+      id: uuid(), title: 'План на день', cards: [
+        { id: uuid(), text: 'Записаться на курс по React' },
+        { id: uuid(), text: 'Забронировать тир на субботу' },
       ],
     },
   ],
@@ -41,12 +41,20 @@ export const boardSlice = createSlice({
     deleteColumn: (state, action) => {
       state.columns.splice(action.payload.columnIndex, 1);
     },
+    setColumns: (state, action) => {
+      if (action.payload.sourceCards && action.payload.destinationCards) {
+        state.columns[action.payload.columnSourceIndex].cards = action.payload.sourceCards;
+        state.columns[action.payload.columnDestinationIndex].cards = action.payload.destinationCards;
+      } else {
+        state.columns[action.payload.columnSourceIndex].cards = action.payload.sourceCards;
+      }
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
 export const {
-  addColumn, addCard, editTitleColumn, editTextCard, deleteCard, deleteColumn,
+  addColumn, addCard, editTitleColumn, editTextCard, deleteCard, deleteColumn, setColumns,
 } = boardSlice.actions;
 
 export default boardSlice.reducer;

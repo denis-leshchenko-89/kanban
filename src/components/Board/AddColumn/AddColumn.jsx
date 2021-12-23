@@ -22,7 +22,7 @@ function AddColumn() {
 
   const handleAddColumn = () => {
     if (columnTitle !== '') {
-      const column = { id: `column-${uuid()}`, title: columnTitle, cards: [] };
+      const column = { id: uuid(), title: columnTitle, cards: [] };
       dispatch(addColumn(column));
       setIsEdit(!isEdit);
     }
