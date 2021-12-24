@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kanban/static/css/main.92f150f4.chunk.css",
+    "main.css": "/kanban/static/css/main.70dfc31e.chunk.css",
     "main.js": "/kanban/static/js/main.a60c71ea.chunk.js",
     "main.js.map": "/kanban/static/js/main.a60c71ea.chunk.js.map",
     "runtime-main.js": "/kanban/static/js/runtime-main.f6bb6e3e.js",
@@ -10,7 +10,7 @@
     "static/js/2.438fc2fd.chunk.js.map": "/kanban/static/js/2.438fc2fd.chunk.js.map",
     "index.html": "/kanban/index.html",
     "static/css/2.15330dd9.chunk.css.map": "/kanban/static/css/2.15330dd9.chunk.css.map",
-    "static/css/main.92f150f4.chunk.css.map": "/kanban/static/css/main.92f150f4.chunk.css.map",
+    "static/css/main.70dfc31e.chunk.css.map": "/kanban/static/css/main.70dfc31e.chunk.css.map",
     "static/js/2.438fc2fd.chunk.js.LICENSE.txt": "/kanban/static/js/2.438fc2fd.chunk.js.LICENSE.txt",
     "static/media/AuthLayout.scss": "/kanban/static/media/bg-board.198e837c.jpg",
     "static/media/global.scss": "/kanban/static/media/fa-solid-900.eb853357.svg"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.f6bb6e3e.js",
     "static/css/2.15330dd9.chunk.css",
     "static/js/2.438fc2fd.chunk.js",
-    "static/css/main.92f150f4.chunk.css",
+    "static/css/main.70dfc31e.chunk.css",
     "static/js/main.a60c71ea.chunk.js"
   ]
 }
