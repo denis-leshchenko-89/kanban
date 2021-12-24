@@ -4,6 +4,7 @@ import { deleteCard, editTextCard } from '../../../store/slices/boardSlice';
 import { useDispatch } from 'react-redux';
 import classNames from 'classnames';
 import { Draggable } from 'react-beautiful-dnd';
+import TextareaAutosize from "react-textarea-autosize";
 
 
 function Card({ card, columnIndex, cardIndex, ...provided }) {
@@ -73,8 +74,9 @@ function Card({ card, columnIndex, cardIndex, ...provided }) {
               })}
             >
               <div className='textarea'>
-                <textarea type='text' value={titleColumn} placeholder='Ввести заголовок для этой карточки'
-                          onChange={handleEditTitleCard} /></div>
+                <TextareaAutosize value={titleColumn} placeholder='Ввести заголовок для этой карточки'
+                                  onChange={handleEditTitleCard}/></div>
+
               <div className='nav'>
                 <button type='button' onClick={(event) => {
                   handleChangeEditText(event, columnIndex, cardIndex);

@@ -6,8 +6,6 @@
   .add-button {
     border-radius: 3px;
     background-color: $grey;
-    transition: all 0.3s ease-in;
-
     .placeholder {
       display: flex;
       align-items: center;
@@ -64,7 +62,6 @@
         outline: none;
         resize: none;
         padding: 6px;
-        transition: all 0.3s linear;
         margin-bottom: 5px;
       }
 

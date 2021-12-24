@@ -29,7 +29,6 @@ export const boardSlice = createSlice({
       state.columns.push(action.payload);
     },
     addCard: (state, action) => {
-      console.log(action.payload);
       state.columns[action.payload.columnIndex].cards.push(action.payload.card);
     },
     editTextCard: (state, action) => {

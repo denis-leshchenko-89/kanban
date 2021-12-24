@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { v4 as uuid } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { addCard } from '../../../store/slices/boardSlice';
+import TextareaAutosize from 'react-textarea-autosize';
 
 function AddCard({ columnIndex }) {
   const dispatch = useDispatch();
@@ -28,6 +29,8 @@ function AddCard({ columnIndex }) {
       setIsEdit(!isEdit);
     }
   };
+
+
   return (
     <div className='add-card'>
       <div className='add-button'>
@@ -47,8 +50,8 @@ function AddCard({ columnIndex }) {
           })}
         >
           <div className='textarea'>
-            <textarea type='text' value={cardText} placeholder='Ввести заголовок для этой карточки'
-                      onChange={handleEditTitleCard} />
+            <TextareaAutosize value={cardText} placeholder='Ввести заголовок для этой карточки'
+                              onChange={handleEditTitleCard}/>
           </div>
           <div className='nav'>
             <button type='button' onClick={handleAddCard}>

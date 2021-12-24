@@ -16,7 +16,6 @@ function RegistrationnPage() {
     event.preventDefault();
     const auth = getAuth();
     const { email, password } = event.target.elements;
-    console.log(email, password);
     createUserWithEmailAndPassword(auth, email.value, password.value)
       .then(({ user }) => {
         dispatch(setUser({

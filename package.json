@@ -21,6 +21,7 @@
     "react-router-dom": "^6.2.1",
     "react-scoped-css": "^0.0.23",
     "react-scripts": "4.0.3",
+    "react-textarea-autosize": "^8.3.3",
     "redux": "^4.1.2",
     "redux-localstorage-simple": "^2.4.1",
     "redux-logger": "^3.0.6",

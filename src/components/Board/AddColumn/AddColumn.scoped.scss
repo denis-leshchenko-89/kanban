@@ -1,13 +1,15 @@
 @import "../../../assets/scss/varibles";
 
 .add-column {
-  min-width: 272px;
-  flex-basis: 272px;
+  width: 272px;
+  margin:10px 5px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
   .add-button {
     border-radius: 3px;
     background-color: $grey;
-    transition: all 0.3s ease-in;
-
     .placeholder {
       display: flex;
       align-items: center;
@@ -40,7 +42,6 @@
         outline: none;
         resize: none;
         padding: 6px;
-        transition: all 0.3s linear;
         margin-bottom: 5px;
       }
     }
@@ -55,7 +56,6 @@
         resize: none;
         padding: 6px;
         font-weight: 700;
-        transition: all 0.3s linear;
         margin-bottom: 5px;
       }
     }
