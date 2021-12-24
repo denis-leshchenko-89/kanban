@@ -11,7 +11,7 @@ function Header() {
   };
   return (
     <header className='header'>
-      <h1>Kanban</h1>
+      <h1>Лого</h1>
       <button type='button' onClick={logOut}>Выйти</button>
     </header>
   );

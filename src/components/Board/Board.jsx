@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import './Board.scoped.scss';
 import AddColumn from '../../components/Board/AddColumn';
 import Column from '../../components/Board/Column/Column';

@@ -3,14 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d536ae9c-482b-4dc6-be30-0c1e08a8a79c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HOC/RequireAuth/RequireAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HOC/RequireAuth/RequireAuth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Board.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.scoped.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Card/Card.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/Card.scoped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/Column/Column.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Column/Column.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Column/Column.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Column/Column.scoped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/slices/boardSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/boardSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scoped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scoped.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AuthLayout/AuthLayout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/AuthLayout/AuthLayout.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +143,7 @@
       <workItem from="1640174259932" duration="39000" />
       <workItem from="1640174307215" duration="15142000" />
       <workItem from="1640195799652" duration="15489000" />
-      <workItem from="1640315252623" duration="1965000" />
+      <workItem from="1640315252623" duration="4324000" />
     </task>
     <servers />
   </component>

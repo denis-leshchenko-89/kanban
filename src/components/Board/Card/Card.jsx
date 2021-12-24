@@ -17,6 +17,10 @@ function Card({ card, columnIndex, cardIndex, ...provided }) {
   }, [card.text]);
 
   const handleChangeEditText = (event, columnIndex, cardIndex) => {
+    if (titleColumn === '') {
+      return;
+    }
+    setIsEdit(!isEdit);
     dispatch(editTextCard({ text: titleColumn, columnIndex: columnIndex, cardIndex: cardIndex }));
   };
   const handleDeleteCard = (columnIndex, cardIndex) => {

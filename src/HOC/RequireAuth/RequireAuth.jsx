@@ -3,7 +3,7 @@ import useAuth from '../../hooks/useAuth';
 
 function RequireAuth({ children, element: Element, ...props }) {
   const { isAuthenticated } = useAuth();
-  if (isAuthenticated) {
+  if (!isAuthenticated) {
     return <Navigate to='/login' />;
   }
   return children;
