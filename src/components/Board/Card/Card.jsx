@@ -7,19 +7,19 @@ import { Draggable } from 'react-beautiful-dnd';
 
 
 function Card({ card, columnIndex, cardIndex, ...provided }) {
-  const [value, setValue] = useState('');
+  const [titleColumn, setTitleColumn] = useState('');
   const [isEdit, setIsEdit] = useState(false);
   const dispatch = useDispatch();
 
 
   useEffect(() => {
-    setValue(card.text);
+    setTitleColumn(card.text);
   }, [card.text]);
 
   const handleChangeEditText = (event, columnIndex, cardIndex) => {
-    dispatch(editTextCard({ text: value, columnIndex: columnIndex, cardIndex: cardIndex }));
+    dispatch(editTextCard({ text: titleColumn, columnIndex: columnIndex, cardIndex: cardIndex }));
   };
-  const handleDelete = (columnIndex, cardIndex) => {
+  const handleDeleteCard = (columnIndex, cardIndex) => {
     dispatch(deleteCard({ columnIndex: columnIndex, cardIndex: cardIndex }));
   };
 
@@ -29,9 +29,8 @@ function Card({ card, columnIndex, cardIndex, ...provided }) {
 
   const handleEditTitleCard = (event) => {
     const value = event.target.value;
-    setValue(value);
+    setTitleColumn(value);
   };
-
 
   return (
     <Draggable
@@ -55,13 +54,13 @@ function Card({ card, columnIndex, cardIndex, ...provided }) {
             <div className={classNames({
               title: true, hide: isEdit,
             })}>
-              <span className='text'>{card.text}</span>
-              <span className='nav'>
-        <i className='far fa-pen' onClick={handleToggle} />
-        <i className='far fa-trash-alt' onClick={() => {
-          handleDelete(columnIndex, cardIndex);
-        }} />
-      </span>
+              <div className='text'>{card.text}</div>
+              <div className='nav'>
+                <i className='far fa-pen' onClick={handleToggle} />
+                <i className='far fa-trash-alt' onClick={() => {
+                  handleDeleteCard(columnIndex, cardIndex);
+                }} />
+              </div>
             </div>
 
             <div
@@ -70,9 +69,8 @@ function Card({ card, columnIndex, cardIndex, ...provided }) {
               })}
             >
               <div className='textarea'>
-        <textarea type='text' value={value} placeholder='Ввести заголовок для этой карточки'
-                  onChange={handleEditTitleCard} />
-              </div>
+                <textarea type='text' value={titleColumn} placeholder='Ввести заголовок для этой карточки'
+                          onChange={handleEditTitleCard} /></div>
               <div className='nav'>
                 <button type='button' onClick={(event) => {
                   handleChangeEditText(event, columnIndex, cardIndex);

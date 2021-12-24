@@ -1,26 +1,11 @@
 @import "../../../assets/scss/varibles";
 
-.column.drop {
-  border: 2px dashed #000000;
-}
-
-.column.drop .column-header {
-  pointer-events: none;
-}
-
-.column.drop .column-list {
-  pointer-events: none;
-}
-
-.column.drop .column-footer {
-  pointer-events: none;
-}
-
 .column {
   flex-basis: 272px;
   background-color: $grey;
   border-radius: 3px;
   cursor: grab;
+  user-select: none;
 
   .column-header {
     margin: 10px;
@@ -62,8 +47,7 @@
   }
 
   .column-list {
-    display: grid;
-    row-gap: 10px;
+    padding: 0px 10px;
   }
 
   .column-footer {

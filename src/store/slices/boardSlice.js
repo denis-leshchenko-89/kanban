@@ -39,7 +39,7 @@ export const boardSlice = createSlice({
       state.columns[action.payload.columnIndex].cards.splice(action.payload.cardIndex, 1);
     },
     deleteColumn: (state, action) => {
-      state.columns.splice(action.payload.columnIndex, 1);
+      state.columns.splice(action.payload, 1);
     },
     setColumns: (state, action) => {
       if (action.payload.sourceCards && action.payload.destinationCards) {

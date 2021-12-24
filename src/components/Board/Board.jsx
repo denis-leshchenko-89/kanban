@@ -1,5 +1,4 @@
 import React, { createContext } from 'react';
-import { v4 as uuid } from 'uuid';
 import './Board.scoped.scss';
 import AddColumn from '../../components/Board/AddColumn';
 import Column from '../../components/Board/Column/Column';
@@ -7,8 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { DragDropContext } from 'react-beautiful-dnd';
 import { setColumns } from '../../store/slices/boardSlice';
 
-
-export const BorderContext = createContext(null);
 
 function Board() {
 
@@ -52,7 +49,7 @@ function Board() {
       <div className='board'>
         {columns && columns.map((column, columnIndex) => {
           return (
-            <Column key={uuid()} column={column} columnIndex={columnIndex} />
+            <Column key={column.id} column={column} columnIndex={columnIndex} />
           );
         })}
         <AddColumn />
