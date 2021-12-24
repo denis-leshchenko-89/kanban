@@ -9,4 +9,8 @@
   white-space: nowrap;
   overflow-x: auto;
   height: 100%;
+  &::after {
+    content: '';
+    padding-right: 0.02px; /* smallest size that is cross browser */
+  }
 }

@@ -53,7 +53,7 @@ function Board() {
           );
         })}
         <AddColumn />
-      </div>
+        </div>
     </DragDropContext>
   );
 };
