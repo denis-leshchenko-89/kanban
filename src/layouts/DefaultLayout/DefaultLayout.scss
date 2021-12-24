@@ -1,5 +1,12 @@
 .board-layout {
   background-image: url("../../assets/images/bg-board.jpg");
   background-size: cover;
+  background-position: 50%;
   height: 100%;
+
+  main {
+    height: 100%;
+    padding-top: 60px;
+  }
+
 }

@@ -1,8 +1,8 @@
 @import "../../../assets/scss/varibles";
 
 .add-column {
-  flex-basis: 270px;
-
+  min-width: 272px;
+  flex-basis: 272px;
   .add-button {
     border-radius: 3px;
     background-color: $grey;

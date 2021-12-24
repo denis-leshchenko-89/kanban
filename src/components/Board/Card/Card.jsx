@@ -17,11 +17,11 @@ function Card({ card, columnIndex, cardIndex, ...provided }) {
   }, [card.text]);
 
   const handleChangeEditText = (event, columnIndex, cardIndex) => {
-    if (titleColumn === '') {
-      return;
+    if (titleColumn !== '') {
+      setIsEdit(!isEdit);
+      dispatch(editTextCard({ text: titleColumn, columnIndex: columnIndex, cardIndex: cardIndex }));
     }
-    setIsEdit(!isEdit);
-    dispatch(editTextCard({ text: titleColumn, columnIndex: columnIndex, cardIndex: cardIndex }));
+
   };
   const handleDeleteCard = (columnIndex, cardIndex) => {
     dispatch(deleteCard({ columnIndex: columnIndex, cardIndex: cardIndex }));

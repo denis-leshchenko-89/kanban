@@ -20,8 +20,8 @@ const persistor = persistStore(store);
 function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
-        <PersistGate loading={null} persistor={persistor}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        < PersistGate loading={null} persistor={persistor}>
           <Routes>
             <Route path='/' element={<DefaultLayout />}>
               <Route path='/' element={<RequireAuth><HomePage /></RequireAuth>} />;

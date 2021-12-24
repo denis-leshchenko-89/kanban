@@ -1,7 +1,8 @@
 @import "../../../assets/scss/varibles";
 
 .column {
-  width: 272px;
+  min-width: 272px;
+  flex-basis: 272px;
   background-color: $grey;
   border-radius: 3px;
   cursor: grab;

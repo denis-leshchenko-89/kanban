@@ -2,6 +2,7 @@
   "name": "kanban",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://denis-leshchenko-89.github.io/kanban/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.15.1",
@@ -26,6 +27,7 @@
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.1",
     "sass": "^1.45.0",
+    "start": "^5.1.0",
     "uuid": "^8.3.2",
     "web-vitals": "^1.1.2"
   },

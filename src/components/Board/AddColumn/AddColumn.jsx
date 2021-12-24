@@ -5,11 +5,13 @@ import { useDispatch } from 'react-redux';
 import { addColumn } from '../../../store/slices/boardSlice';
 import { v4 as uuid } from 'uuid';
 
+
 function AddColumn() {
   const [isEdit, setIsEdit] = useState(false);
   const [columnTitle, setColumnTitle] = useState('');
-
   const dispatch = useDispatch();
+
+
 
   const handleToggle = () => {
     setIsEdit(!isEdit);
@@ -25,6 +27,11 @@ function AddColumn() {
       const column = { id: uuid(), title: columnTitle, cards: [] };
       dispatch(addColumn(column));
       setIsEdit(!isEdit);
+      setTimeout(()=>{
+        let board = document.querySelector('.board');
+        board.scrollBy(300, 0);
+
+      },0)
     }
   };
 
@@ -51,7 +58,7 @@ function AddColumn() {
           </div>
           <div className='nav'>
             <button type='button' onClick={handleAddColumn}>
-              Добавить карточку
+              Добавить колонку
             </button>
             <i className='fal fa-times' onClick={handleToggle} />
           </div>
