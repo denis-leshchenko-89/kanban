@@ -61,7 +61,7 @@
   input[type=email],
   input[type=password] {
     background-color: #f6f6f6;
-    border: none;
+    border:2px solid transparent;
     outline:none;
     color: #0d0d0d;
     padding: 15px 32px;
@@ -71,12 +71,13 @@
     font-size: 16px;
     margin: 15px 0px;
     width: 100%;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
 
 
     &:focus {
-      outline:2px solid #0079bf;
+      border:2px solid #0079bf;
       background-color: #fff;
+      border-radius: 5px;
     }
 
     &::placeholder {
