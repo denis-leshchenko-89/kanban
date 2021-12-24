@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/kanban/static/css/main.7fe7f2c7.chunk.css",
-    "main.js": "/kanban/static/js/main.b89e473d.chunk.js",
-    "main.js.map": "/kanban/static/js/main.b89e473d.chunk.js.map",
+    "main.css": "/kanban/static/css/main.92f150f4.chunk.css",
+    "main.js": "/kanban/static/js/main.a60c71ea.chunk.js",
+    "main.js.map": "/kanban/static/js/main.a60c71ea.chunk.js.map",
     "runtime-main.js": "/kanban/static/js/runtime-main.f6bb6e3e.js",
     "runtime-main.js.map": "/kanban/static/js/runtime-main.f6bb6e3e.js.map",
     "static/css/2.15330dd9.chunk.css": "/kanban/static/css/2.15330dd9.chunk.css",
-    "static/js/2.7f9822c7.chunk.js": "/kanban/static/js/2.7f9822c7.chunk.js",
-    "static/js/2.7f9822c7.chunk.js.map": "/kanban/static/js/2.7f9822c7.chunk.js.map",
+    "static/js/2.438fc2fd.chunk.js": "/kanban/static/js/2.438fc2fd.chunk.js",
+    "static/js/2.438fc2fd.chunk.js.map": "/kanban/static/js/2.438fc2fd.chunk.js.map",
     "index.html": "/kanban/index.html",
     "static/css/2.15330dd9.chunk.css.map": "/kanban/static/css/2.15330dd9.chunk.css.map",
-    "static/css/main.7fe7f2c7.chunk.css.map": "/kanban/static/css/main.7fe7f2c7.chunk.css.map",
-    "static/js/2.7f9822c7.chunk.js.LICENSE.txt": "/kanban/static/js/2.7f9822c7.chunk.js.LICENSE.txt",
+    "static/css/main.92f150f4.chunk.css.map": "/kanban/static/css/main.92f150f4.chunk.css.map",
+    "static/js/2.438fc2fd.chunk.js.LICENSE.txt": "/kanban/static/js/2.438fc2fd.chunk.js.LICENSE.txt",
     "static/media/AuthLayout.scss": "/kanban/static/media/bg-board.198e837c.jpg",
     "static/media/global.scss": "/kanban/static/media/fa-solid-900.eb853357.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f6bb6e3e.js",
     "static/css/2.15330dd9.chunk.css",
-    "static/js/2.7f9822c7.chunk.js",
-    "static/css/main.7fe7f2c7.chunk.css",
-    "static/js/main.b89e473d.chunk.js"
+    "static/js/2.438fc2fd.chunk.js",
+    "static/css/main.92f150f4.chunk.css",
+    "static/js/main.a60c71ea.chunk.js"
   ]
 }
