@@ -41,7 +41,7 @@ function AddCard({ columnIndex }) {
           })}
           onClick={handleToggle}
         >
-          <i className='far fa-plus' />Добавьте еще одну колонку
+          <i className='far fa-plus' />Добавьте еще одну карточку
         </div>
         <div
           className={classNames({
